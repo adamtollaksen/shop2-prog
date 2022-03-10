@@ -7,7 +7,7 @@ def Main():
     elif "no":
         print("Have a good day!")
 
-items: 
+items=[] 
 
 
 Main() 
