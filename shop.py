@@ -8,6 +8,7 @@ class items:
         self.price = price
           
 list = [] 
+
   
 list.append( items('banan', 1))
 list.append( items('äpple', 2))
@@ -38,12 +39,17 @@ if "yes":
 else:
     print("Have a good day!")
 
-input("Here are the things you can afford. Is there anything you're looking to buy?(answer with the name of the item you want to buy): ")
 
-for i in range(0,len(l)):
-    if(list[i]<money):
-        print(list[i],end=" ")
-print(items) 
+for i in range(0,len(list)):
+    if(list[i].price<money):
+        print("Here is what you can afford: ", 
+        list[i].price,end=" ")
+
+"""
+for obj in list:
+    
+    print( obj.name, obj.price, sep =' ' )
+"""
 
 
 
