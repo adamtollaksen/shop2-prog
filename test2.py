@@ -24,7 +24,9 @@ items.append(Item('skärm', 3500))
 items.append(Item('dator', 25000))
 items.append(Item('jet', 350000000))
 
-print(items[3].price)
+
+for Item in items:
+    print(Item.name)
 
 
 """
