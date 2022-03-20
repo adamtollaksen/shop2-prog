@@ -1,3 +1,8 @@
+from ast import And
+from tracemalloc import stop
+from typing import List
+
+
 class Item: 
     def __init__(self, name, price): 
         self.name = name 
@@ -30,10 +35,64 @@ if "yes":
     print("Here are our current items")
     for Item in items:
         print(Item.name, " ", Item.price)
-    money = input("How much money do you have on you right now?(number only) ")
+    money = int(input("How much money do you have on you right now?(number only) "))
     print("Your current balance is: ", money)
-else:
-    print("Have a good day!")
+    buy = str(input("What do you want to buy?(if no, type 'no')(make sure to write the word exactly as it says!) "))
+
+    for Item in items:
+        if(Item.name == buy):
+            if(Item.price < money):
+                print("You bought", buy, "!")
+                money2 = money - Item.price
+            else:
+                print("You either said something that we don't have or you don't have enough money.")
+                quit()
+    
+    
+    print("You have ", money2, "left.")
+    input("Do you want to buy anything more?(yes/no)")
+    if "yes":
+        print("Here are our current items")
+        for Item in items:
+            print(Item.name, " ", Item.price)
+        print("Your current balance is: ", money2)
+        buy = str(input("What do you want to buy?(if no, type 'no')(make sure to write the word exactly as it says!) "))
+
+        for Item in items:
+            if(Item.name == buy):
+                if(Item.price < money2):
+                    print("You bought", buy, "!")
+                    money3 = money2 - Item.price
+                else:
+                    print("You either said something that we don't have or you don't have enough money.")
+                    quit()
+
+    
+    print("You have ", money3, "left.")
+    input("Do you want to buy anything more?(yes/no)")
+    if "yes":
+        print("Here are our current items")
+        for Item in items:
+            print(Item.name, " ", Item.price)
+        print("Your current balance is: ", money3)
+        buy = str(input("What do you want to buy?(if no, type 'no')(make sure to write the word exactly as it says!) "))
+
+        for Item in items:
+            if(Item.name == buy):
+                if(Item.price < money3):
+                    print("You bought", buy, "!")
+                    money4 = money2 - Item.price
+                else:
+                    print("You either said something that we don't have or you don't have enough money.")
+                    quit()
+
+print("You have", money4,"left.")
+print("The shop is sadly closing...")
+
+
+    
+
+print("Have a good day!")
 
 
 
