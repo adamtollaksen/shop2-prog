@@ -97,21 +97,4 @@ print("Have a good day!")
 
 
 
-"""
-for i in range(0,len(list)):
-    if(list[i].price<money):
-        print("Here is what you can afford: ", 
-        list[i].price,end=" ")
-"""
-"""
-for obj in list:
-    
-    print( obj.name, obj.price, sep =' ' )
-"""
-
-
-
-        
-
-
 
