@@ -1,8 +1,7 @@
 # shop prog
- Tillämpad Programmering (TIATILL00S)
-Exempel README 2
-Niclas Lund
-3 feb.
+Tllämpad Programmering (TIATILL00S)
+Tollaksen Adam
+20 mars.
 
 
 # Tutorial to a Readme
@@ -36,18 +35,13 @@ Programmet körs genom att öppna .py filen.
 Installation sker via filöverföring.
 
 ## To do
-
-Det kan vara nyttigt att få andra som läser om projektet att få veta vad du saknar just nu i programmet. Gör detta gärna genom en lista där färdiga saker strukits över.
-Exempel:
-
-
-    ~~Skapa lista för butik~~
-    ~~Subtrahera pengar på varje köp~~
-    ~~Göra det möjligt att handla fler än 1 gång(er). ~~
-    Gör en forloop av programmet, aka man kan handla hur många gånger som helst innan ens pengar tar slut.
-    Lägg till fler produkter i butiken. 
-    Skapa ett kvitto när man är klarhandlad på vad man har köpt. 
-    Skapa mer och djupare dialog mellan kunden och butiken. 
+- ~~Skapa lista för butik~~
+- ~~Subtrahera pengar på varje köp~~
+- ~~Göra det möjligt att handla fler än 1 gång(er).~~
+- Gör en forloop av programmet, aka man kan handla hur många gånger som helst innan ens pengar tar slut.
+- Lägg till fler produkter i butiken. 
+- Skapa ett kvitto när man är klarhandlad på vad man har köpt. 
+- Skapa mer och djupare dialog mellan kunden och butiken. 
 
 ## Att bidra (Contribution)
 
