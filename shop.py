@@ -28,73 +28,34 @@ items.append(Item('skärm', 3500))
 items.append(Item('dator', 25000))
 items.append(Item('jet', 350000000))
 
+choice = ""
+money = int(input("How much money do you have on you right now?(number only) "))
+print("Welcome to the shop!")
+choice = input("Do you want to buy anything? (yes/no)")
+while choice == "yes":
+    if choice == "yes":
+        print("Here are our current items")
+        for Item in items:
+            print(Item.name, " ", Item.price)
+        print("Your current balance is: ", money)
+        buy = str(input("What do you want to buy? (Say 'exit' if you want to leave) "))
+        if "exit":
+            print("bye!")
+            quit()
 
-input("Welcome to the shop, would you like to enter?(yes/no) ")
-if "yes":
-    print("Welcome!")
-    print("Here are our current items")
-    for Item in items:
-        print(Item.name, " ", Item.price)
-    money = int(input("How much money do you have on you right now?(number only) "))
-    print("Your current balance is: ", money)
-    buy = str(input("What do you want to buy?(if no, type 'no')(make sure to write the word exactly as it says!) "))
-
-    for Item in items:
-        if(Item.name == buy):
-            if(Item.price < money):
-                print("You bought", buy, "!")
-                money2 = money - Item.price
-            else:
+        for Item in items:
+            if(Item.name == buy):
+                if(Item.price < money):
+                    print("You bought", buy, "!")
+                    money -= Item.price
+                    print("you now have", money)
+                else:
+                    print("You either said something that we don't have or you don't have enough money.")
+                    quit()
+            elif "exit":
                 print("You either said something that we don't have or you don't have enough money.")
                 quit()
-    
-    
-    print("You have ", money2, "left.")
-    input("Do you want to buy anything more?(yes/no)")
-    if "yes":
-        print("Here are our current items")
-        for Item in items:
-            print(Item.name, " ", Item.price)
-        print("Your current balance is: ", money2)
-        buy = str(input("What do you want to buy?(if no, type 'no')(make sure to write the word exactly as it says!) "))
 
-        for Item in items:
-            if(Item.name == buy):
-                if(Item.price < money2):
-                    print("You bought", buy, "!")
-                    money3 = money2 - Item.price
-                else:
-                    print("You either said something that we don't have or you don't have enough money.")
-                    quit()
-
-    
-    print("You have ", money3, "left.")
-    input("Do you want to buy anything more?(yes/no)")
-    if "yes":
-        print("Here are our current items")
-        for Item in items:
-            print(Item.name, " ", Item.price)
-        print("Your current balance is: ", money3)
-        buy = str(input("What do you want to buy?(if no, type 'no')(make sure to write the word exactly as it says!) "))
-
-        for Item in items:
-            if(Item.name == buy):
-                if(Item.price < money3):
-                    print("You bought", buy, "!")
-                    money4 = money2 - Item.price
-                else:
-                    print("You either said something that we don't have or you don't have enough money.")
-                    quit()
-
-print("You have", money4,"left.")
-print("The shop is sadly closing...")
-
-
-    
-
-print("Have a good day!")
-
-
-
+print("Bye! Have a good day!")
 
 
